@@ -1,10 +1,10 @@
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
-    public Text techText;
-    public Text moneyText;
+    public TextMeshProUGUI techText;
+    public TextMeshProUGUI moneyText;
 
     void Update()
     {
