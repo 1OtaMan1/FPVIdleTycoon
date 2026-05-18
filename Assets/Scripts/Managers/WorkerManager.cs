@@ -20,4 +20,9 @@ public class WorkerManager : MonoBehaviour
     {
         return workers * techPerWorker;
     }
+
+    public float GetWorkerCost()
+    {
+        return 50 + workers * 25;
+    }
 }

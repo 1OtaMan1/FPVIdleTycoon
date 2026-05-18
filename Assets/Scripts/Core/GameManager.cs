@@ -11,4 +11,22 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
     }
+
+    void Start()
+    {
+        GetComponent<SaveSystem>().Load();
+    }
+
+    void OnApplicationQuit()
+    {
+        GetComponent<SaveSystem>().Save();
+    }
+
+    void OnApplicationPause(bool pause)
+    {
+        if (pause)
+        {
+            GetComponent<SaveSystem>().Save();
+        }
+    }
 }
