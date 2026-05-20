@@ -23,10 +23,9 @@ public class UIManager : MonoBehaviour
         workersText.text = "Workers: " + workerManager.workers;
         dronesText.text = "Drones: " + droneManager.drones;
 
-        droneButtonText.text = "Create Drone (" + droneManager.GetDroneCost().ToString("F0") + ")";
+        droneButtonText.text = "Create Drone";
         workerButtonText.text = "Hire Worker (" + workerManager.GetWorkerCost().ToString("F0") + ")";
 
-        createDroneButton.interactable = GameManager.Instance.technology >= droneManager.GetDroneCost();
         hireWorkerButton.interactable = GameManager.Instance.money >= workerManager.GetWorkerCost();
     }
 }

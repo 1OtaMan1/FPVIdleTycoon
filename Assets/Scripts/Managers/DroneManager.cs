@@ -8,7 +8,7 @@ public class DroneManager : MonoBehaviour
     public float baseIncome = 10f;
     public float incomePerDrone = 2f;
 
-    public void CreateDrone()
+    public void AddDrone()
     {
         float cost = baseCost * Mathf.Pow(1.15f, drones);
 
@@ -20,10 +20,5 @@ public class DroneManager : MonoBehaviour
             float income = baseIncome * drones;
             GameManager.Instance.money += income;
         }
-    }
-
-    public float GetDroneCost()
-    {
-        return baseCost * Mathf.Pow(1.15f, drones);
     }
 }

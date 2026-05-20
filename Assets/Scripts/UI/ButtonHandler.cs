@@ -7,7 +7,7 @@ public class ButtonHandler : MonoBehaviour
 
     public void OnCreateDrone()
     {
-        droneManager.CreateDrone();
+        droneManager.AddDrone();
     }
 
     public void OnHireWorker()
